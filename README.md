@@ -1,1 +1,201 @@
 # Clean-fresh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clean and Fresh - Houston Cleaning Service</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f9fc;
+    color: #333;
+  }
+  header {
+    background: #6a0dad;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  nav a {
+    color: white;
+    margin-left: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #d3b0ff;
+  }
+  .hero {
+    background: url('https://images.unsplash.com/photo-1581579181044-4776e19494ef?auto=format&fit=crop&w=1470&q=80') center center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  }
+  .hero h1 {
+    font-size: 3.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+  }
+  .btn-primary {
+    background-color: #6a0dad;
+    border: none;
+    padding: 15px 35px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(106, 13, 173, 0.6);
+    transition: background-color 0.3s ease;
+    width: max-content;
+  }
+  .btn-primary:hover {
+    background-color: #530aaf;
+  }
+  .services {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0 20px;
+  }
+  .service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    flex: 1 1 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  .service-card img {
+    width: 90px;
+    margin-bottom: 20px;
+  }
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #6a0dad;
+  }
+  .service-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  #contact {
+    max-width: 600px;
+    margin: 50px auto 80px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #6a0dad;
+  }
+  #contact p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  footer {
+    background: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 768px) {
+    .hero {
+      padding-left: 20px;
+      height: 60vh;
+      text-align: center;
+      align-items: center;
+    }
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 15px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Clean and Fresh</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Expert Cleaning Services in Houston, TX</h1>
+  <p>Reliable, Affordable & Trusted by Thousands</p>
+  <button class="btn-primary">Get a Free Quote</button>
+</section>
+
+<section id="services" class="services">
+  <div class="service-card">
+    <img src="https://img.icons8.com/color/96/000000/home--v1.png" alt="Residential Cleaning" />
+    <h3>Residential Cleaning</h3>
+    <p>Keep your home spotless and fresh with our expert cleaning team.</p>
+  </div>
+  <div class="service-card">
+    <img src="https://img.icons8.com/color/96/000000/office.png" alt="Commercial Cleaning" />
+    <h3>Commercial Cleaning</h3>
+    <p>Professional cleaning for your office or business space.</p>
+  </div>
+  <div class="service-card">
+    <img src="https://img.icons8.com/color/96/000000/move--v1.png" alt="Move-In/Out Cleaning" />
+    <h3>Move-In/Out Cleaning</h3>
+    <p>Make your moving stress-free with our thorough cleaning service.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 Phone: (123) 456-7890</p>
+  <p>📍 Houston, TX</p>
+  <p>📧 Email: info@cleanandfresh.com</p>
+</section>
+
+<footer>
+  &copy; 2025 Clean and Fresh. All rights reserved.
+</footer>
+
+</body>
+</html>
